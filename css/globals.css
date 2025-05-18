@@ -1,0 +1,34 @@
+:root {
+  --color-background: #0b1c2c;
+  --color-surface: #19346b;
+  --color-header: #1f4287;
+  --color-footer: #0d141f;
+  --color-input-background: #1f2e3f;
+  --color-primary: #1e90ff;
+  --color-primary-hover: #007fff;
+  --font-family: "Arial", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+img {
+  opacity: 0.1;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

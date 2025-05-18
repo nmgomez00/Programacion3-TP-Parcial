@@ -1,0 +1,112 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-header) 0%,
+    var(--color-background) 75%,
+    var(--color-background) 100%
+  );
+}
+main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.banner {
+  width: 100%;
+  background-image: url(../img/contact-us-banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-accent);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+input,
+textarea,
+button {
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  color: white;
+  width: 75%;
+}
+
+input {
+  height: 30px;
+  border: 1px solid #94a3b8;
+}
+textarea {
+  resize: none;
+  height: 100px;
+}
+button {
+  background-color: var(--color-primary);
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color-primary-hover);
+  transition: 0.3s;
+}
+label {
+  width: 75%;
+  text-align: left;
+}
+address {
+  width: 90vw;
+  padding: 20px;
+  background-color: var(--color-surface);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redes-sociales-iconos {
+  display: flex;
+  gap: 10px;
+}
+.redes-sociales-iconos > a {
+  text-decoration: none;
+  color: white;
+}
+.redes-sociales-iconos > a > img {
+  width: 32px;
+}
+@media (max-width: 480px) {
+  .banner {
+    height: 150px;
+  }
+  form,
+  address {
+    width: 75vw;
+  }
+}
+@media (min-width: 480px) and (max-width: 1440px) {
+  form,
+  address {
+    width: 375px;
+  }
+  .banner {
+    height: 250px;
+  }
+}

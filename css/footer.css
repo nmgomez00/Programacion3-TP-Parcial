@@ -1,0 +1,19 @@
+footer {
+  background: linear-gradient(
+    to bottom,
+    var(--color-background) 0%,
+    var(--color-footer) 50%,
+    var(--color-footer) 100%
+  );
+  color: white;
+  width: 100vw;
+  height: 15vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > p {
+  padding-left: 10px;
+}

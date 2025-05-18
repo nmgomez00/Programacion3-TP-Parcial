@@ -1,0 +1,108 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-header) 0%,
+    var(--color-background) 75%,
+    var(--color-background) 100%
+  );
+}
+
+.banner {
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.banner > p {
+  text-align: center;
+}
+.sobre-nosotros {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sobre-nosotros-texto {
+  width: 90vw;
+  background-color: var(--color-surface);
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.titulo {
+  margin-top: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.card {
+  background-color: var(--color-surface);
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card > img {
+  width: 200px;
+  border-radius: 10px;
+}
+.card > a {
+  text-decoration: underline;
+  color: white;
+  align-self: flex-start;
+}
+@media (max-width: 480px) {
+  .banner {
+    height: 150px;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  .card,
+  .sobre-nosotros-texto {
+    width: 75vw;
+  }
+}
+@media (min-width: 480px) and (max-width: 1440px) {
+  .banner {
+    height: 250px;
+  }
+  .cards-container {
+    flex-direction: row;
+  }
+  .card {
+    width: 300px;
+  }
+  .sobre-nosotros-texto {
+    width: 65vw;
+  }
+}
