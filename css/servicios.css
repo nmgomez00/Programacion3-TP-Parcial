@@ -5,6 +5,8 @@ body {
     var(--color-background) 30%,
     var(--color-background) 100%
   );
+  margin:0 auto;
+  padding: 0;
 }
 main {
   color: white;
@@ -38,11 +40,11 @@ h2 {
   justify-content: center;
 }
 .cards-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   gap: 20px;
 }
 .card {
