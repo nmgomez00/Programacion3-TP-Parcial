@@ -85,7 +85,7 @@ h2 {
     height: fit-content;
   }
 }
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 480px) {
   .card {
     width: 375px;
     height: 500px;

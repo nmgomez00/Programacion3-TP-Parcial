@@ -101,7 +101,7 @@ address {
     width: 75vw;
   }
 }
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 480px) {
   form,
   address {
     width: 375px;
